@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+<title>Ajout produit</title>
+
+<form method="post">
+    {% csrf_token %}
+    Nom du produit : {{form.nom}}
+    Description : {{form.description}}
+    Prix en CFA : {{form.prix}}
+    Categorie : {{form.categorie}}
+    Disponibilité : {{form.disponibilite}}
+</form>
